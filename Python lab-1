@@ -1,0 +1,29 @@
+class Student:
+    def __init__(self, id, fn, ln, cou, year, gpa, uni, mob):
+        self.id = id
+        self.fn = fn
+        self.ln = ln
+        self.cou = cou
+        self.year = year
+        self.gpa = gpa
+        self.uni = uni
+        self.mob = mob
+
+    def p_details(self):
+        print(f"Name:{self.fn} {self.ln}")
+        print(f"University:{self.uni}")
+        print(f"Year of study:{self.year}")
+
+    def email_create(self):
+        print(f"Email:{self.fn}{self.ln}@gmail.com")
+
+    def thankyou(self):
+        print("Thank you!!")
+
+
+a = Student(int(input("Enter your Id number:")), input("Enter your first name:"), input("Enter your last name:"),
+            input("Enter your Course:"),
+            int(input("Enter your year:")), float(input("Enter your GPA:")), input("Enter your University:"),
+            int(input("Enter your phone number:")))
+a.p_details()
+a.email_create()
